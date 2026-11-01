@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job Opportunities in Sidon | فرص عمل في صيدا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10243a;--muted:#55677a;--paper:#f7f9fb;--line:#d5dde5;--teal:#0b7a75;--teal-d:#085c58;--sand:#e9f2f1;--err:#b3261e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.7 "IBM Plex Sans Arabic","IBM Plex Sans",Tahoma,Arial,sans-serif}
+html[lang=en] body{font-family:"IBM Plex Sans","IBM Plex Sans Arabic",Arial,sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.lang{background:none;border:1px solid var(--line);border-radius:6px;padding:6px 14px;font:inherit;font-size:15px;color:var(--ink);cursor:pointer}
+.lang:hover{border-color:var(--teal)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.hero{background:var(--ink);color:#fff;padding:20px 0 64px;position:relative;overflow:hidden;
+ background-image:radial-gradient(rgba(255,255,255,.09) 1.2px,transparent 1.3px);background-size:26px 26px}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--teal),#f2b705)}
+.hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:10px;margin:36px 0 18px;padding:6px 14px;border:1px solid #3d566e;border-radius:99px;font-size:15px;color:#d8e4ee}
+.badge i{width:9px;height:9px;border-radius:50%;background:#3ddc97;box-shadow:0 0 0 4px rgba(61,220,151,.2)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:34px 0 0;padding:0;list-style:none}
+.chips a{display:block;padding:8px 16px;border-radius:6px;background:rgba(255,255,255,.08);border:1px solid #3d566e;color:#fff;text-decoration:none;font-size:16px}
+.chips a:hover{background:rgba(255,255,255,.16);border-color:#8fb0cc}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 32px;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;padding:0 20px;border-inline-start:3px solid var(--teal)}
+.steps li::before{content:counter(s);display:block;font-size:30px;font-weight:700;color:var(--teal);line-height:1.2}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:15px}
+.intro{font-size:20px;max-width:680px;margin:0 0 8px}
+.hero h1{margin:0 0 18px;font-size:clamp(38px,8vw,68px);line-height:1.12;font-weight:700;letter-spacing:-.01em;max-width:820px}
+.hero p{margin:0 0 30px;max-width:600px;color:#c6d3df;font-size:20px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-size:17px;font-weight:500;font-family:inherit;line-height:1.4;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn.main{background:#f2b705;color:#10243a;font-weight:700}
+.btn.main:hover{background:#ffcb2e}
+.btn.ghost{border-color:#5d7389;color:#fff}
+.btn.ghost:hover{border-color:#fff}
+.btn.send{background:var(--teal);color:#fff;width:100%;margin-top:8px}
+.btn.send:hover{background:var(--teal-d)}
+h2{font-size:28px;margin:0 0 6px;line-height:1.3}
+section.wrap{padding:52px 20px}
+.hero h1,.intro{text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:8px}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:10px;padding:26px 26px 22px;display:flex;flex-direction:column;scroll-margin-top:20px;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 10px 28px rgba(16,36,58,.10);transform:translateY(-2px)}
+.card:target{box-shadow:0 0 0 3px #f2b705}
+.ch{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.ic{flex:none;width:48px;height:48px;border-radius:10px;background:var(--sand);color:var(--teal);display:grid;place-items:center}
+.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{margin:0;font-size:20px;line-height:1.3}
+.tag{display:inline-block;margin:8px 0 14px;padding:2px 12px;border-radius:99px;background:var(--ink);color:#fff;font-size:14px;align-self:flex-start}
+.card h4{margin:0 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+html[lang=ar] .card h4{letter-spacing:0;text-transform:none;font-size:15px}
+.card ul{list-style:none;margin:0 0 16px;padding:0}
+.card li{position:relative;padding-inline-start:26px;margin-bottom:7px;font-size:16px;line-height:1.55}
+.card li::before{content:"";position:absolute;inset-inline-start:0;top:.45em;width:12px;height:7px;border-inline-start:2.5px solid var(--teal);border-bottom:2.5px solid var(--teal);transform:rotate(-45deg)}
+.plus{margin:auto 0 16px;padding:10px 14px;background:#fff8e1;border-inline-start:4px solid #f2b705;border-radius:4px;font-size:15px}
+.card .btn{text-align:center;padding:10px 20px;font-size:16px;background:var(--ink);color:#fff}
+.card .btn:hover{background:var(--teal)}
+.all{margin-top:20px;color:var(--muted)}
+.apply{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+form{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.full{grid-column:1/-1}
+label{display:block;font-weight:500;font-size:16px;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #9aa9b8;border-radius:6px;background:#fff;color:var(--ink)}
+input[type=file]{padding:8px}
+textarea{min-height:96px;resize:vertical}
+input[dir=ltr]{text-align:start}
+.hint{font-size:14px;color:var(--muted);margin-top:4px}
+#msg{grid-column:1/-1;margin:0;padding:12px 14px;border-radius:6px;display:none}
+#msg.ok{display:block;background:var(--sand);color:var(--teal-d)}
+#msg.bad{display:block;background:#fbeae9;color:var(--err)}
+.contact{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:baseline}
+.contact a{color:var(--ink);font-size:24px;font-weight:700;text-decoration:none;direction:ltr;unicode-bidi:embed}
+.contact a:hover{color:var(--teal)}
+footer.wrap{padding:28px 20px;color:var(--muted);font-size:14px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+@media(max-width:600px){.steps{grid-template-columns:1fr;gap:18px}form{grid-template-columns:1fr}.hero{padding:40px 0 44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap">
+  <div class="top"><span></span><button class="lang" id="lang" type="button" style="color:#fff;border-color:#5d7389"></button></div>
+  <div class="badge"><i></i><span data-k="badge"></span></div>
+  <h1 data-k="title"></h1>
+  <p data-k="lead"></p>
+  <div class="btns">
+   <a class="btn main" href="#apply" data-k="cta"></a>
+   <a class="btn ghost" href="tel:+96181647150" dir="ltr">+961 81 647 150</a>
+  </div>
+  <ul class="chips" id="chips"></ul>
+ </div>
+</header>
+
+<main>
+<section class="wrap" id="roles">
+ <h2 data-k="rolesH"></h2>
+ <p class="intro" data-k="intro"></p>
+ <p class="sub" data-k="rolesS"></p>
+ <div id="list"></div>
+ <p class="all" data-k="all"></p>
+</section>
+
+<div class="apply"><section class="wrap" id="apply">
+ <h2 data-k="applyH"></h2>
+ <p class="sub" data-k="applyS"></p>
+ <ol class="steps" id="steps"></ol>
+ <form id="f" novalidate>
+  <div><label for="name" data-k="fName"></label><input id="name" name="name" required autocomplete="name"></div>
+  <div><label for="phone" data-k="fPhone"></label><input id="phone" name="phone" type="tel" dir="ltr" required autocomplete="tel" placeholder="+961 …"></div>
+  <div><label for="email" data-k="fEmail"></label><input id="email" name="email" type="email" dir="ltr" required autocomplete="email"></div>
+  <div><label for="city" data-k="fCity"></label><input id="city" name="city" autocomplete="address-level2"></div>
+  <div><label for="role" data-k="fRole"></label><select id="role" name="role" required></select></div>
+  <div><label for="exp" data-k="fExp"></label><input id="exp" name="experience" type="number" min="0" max="50" inputmode="numeric"></div>
+  <div class="full"><label for="cv" data-k="fCv"></label><input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx"><div class="hint" data-k="cvHint"></div></div>
+  <div class="full"><label for="note" data-k="fNote"></label><textarea id="note" name="note"></textarea></div>
+  <div class="full"><button class="btn send" type="submit" data-k="send"></button></div>
+  <p id="msg" role="status" aria-live="polite"></p>
+ </form>
+</section></div>
+
+<section class="wrap">
+ <h2 data-k="contactH"></h2>
+ <div class="contact">
+  <a href="tel:+96181647150">+961 81 647 150</a>
+  <a href="https://wa.me/96181647150" data-k="wa" style="font-size:18px;direction:inherit"></a>
+ </div>
+</section>
+</main>
+<footer class="wrap" data-k="foot"></footer>
+
+<script>
+// Paste your Google Apps Script Web App URL here (see google-apps-script.gs).
+// Applications are then saved to the Google Sheet. While empty, WhatsApp is used instead.
+var SHEET_URL = "https://script.google.com/macros/s/AKfycbwvNH61IvfGoLJco-b4aFeXH2_npi9jvbMNwhQ0Bpw5XmMttkCjxHgWraGkLfsChPiO/exec";
+var PHONE = "96181647150";
+
+var roles = [
+ {id:"admin",
+  ar:{t:"مسؤول نظم المعلومات (IT Administrator)",m:"خبرة سنتان أو أكثر",r:["إجازة في المعلوماتية أو علوم الحاسوب (أو دبلوم تقني مع خبرة معادلة)","إدارة خوادم Windows/Linux وActive Directory وصلاحيات المستخدمين","معرفة جيدة بالشبكات: LAN/WAN وDHCP وDNS وVPN وWi-Fi","خبرة عملية في النسخ الاحتياطي والمراقبة وMicrosoft 365 أو Google Workspace","مهارة في حل المشكلات وتوثيق العمل"],p:"يُفضّل: MCSA أو CCNA أو ITIL"},
+  en:{t:"IT Administrator",m:"2+ years of experience",r:["Bachelor's degree in IT or Computer Science (or a technical diploma with equivalent experience)","Administering Windows/Linux servers, Active Directory, and user access","Solid networking: LAN/WAN, DHCP, DNS, VPN, Wi-Fi","Hands-on with backup, monitoring, and Microsoft 365 or Google Workspace","Strong troubleshooting and documentation skills"],p:"Plus: MCSA, CCNA, or ITIL"}},
+ {id:"tech",
+  ar:{t:"فنّي دعم تقني (IT Support Technician)",m:"خبرة سنة أو أكثر",r:["دبلوم تقني أو إجازة في المعلوماتية (أو خبرة معادلة)","خبرة في الدعم الفني للأجهزة والبرمجيات (Helpdesk)","تركيب وإعداد وصيانة أجهزة الكمبيوتر والطابعات وأجهزة الشبكة","معرفة أساسية بالشبكات والتمديدات","أسلوب تواصل واضح وروح خدمة"],p:"يُفضّل: CompTIA A+ أو CCNA"},
+  en:{t:"IT Support Technician",m:"1+ year of experience",r:["Technical diploma or degree in IT (or equivalent experience)","Helpdesk or hardware/software support experience","Install, configure, and repair PCs, printers, and network devices","Basic networking and structured cabling","Clear communication and a service-oriented attitude"],p:"Plus: CompTIA A+ or CCNA"}},
+ {id:"mobile",
+  ar:{t:"مطوّر تطبيقات موبايل (Mobile Application Developer)",m:"خبرة سنتان أو أكثر",r:["إجازة في علوم الحاسوب أو اختصاص قريب","تطوير تطبيقات باستخدام Flutter أو React Native أو Kotlin/Swift","ربط واجهات REST API والتعامل مع JSON والمصادقة والتخزين المحلي","إتقان Git والنشر على Google Play وApp Store","حسّ جيد بتصميم تجربة المستخدم والأداء"],p:"يُفضّل: خبرة Firebase أو Supabase وCI/CD ومعرض أعمال لتطبيقات منشورة"},
+  en:{t:"Mobile Application Developer",m:"2+ years of experience",r:["Bachelor's degree in Computer Science or a related field","Building apps with Flutter, React Native, or native Kotlin/Swift","Integrating REST APIs, JSON, authentication, and local storage","Proficient with Git and publishing to Google Play and the App Store","Good UI/UX sense and performance awareness"],p:"Plus: Firebase/Supabase, CI/CD, and a portfolio of published apps"}},
+ {id:"sec",
+  ar:{t:"مهندس أمن سيبراني (أمن الشبكات والبيانات)",m:"خبرة سنتان أو أكثر",r:["إجازة في الأمن السيبراني أو المعلوماتية أو علوم الحاسوب","خبرة في أمن الشبكات أو أمن المعلومات","عمل عملي على الجدران النارية وVPN وIDS/IPS وفحص الثغرات","فهم التشفير والتحكم بالوصول وحماية البيانات","القدرة على التعامل مع الحوادث الأمنية وكتابة التقارير"],p:"يُفضّل: Security+ أو CEH أو CCNA Security أو ما يعادلها"},
+  en:{t:"Cybersecurity Engineer (Network & Data Security)",m:"2+ years of experience",r:["Bachelor's degree in Cybersecurity, IT, or Computer Science","Experience in network or information security","Hands-on with firewalls, VPNs, IDS/IPS, and vulnerability scanning","Understanding of encryption, access control, and data protection","Able to respond to incidents and write security reports"],p:"Plus: Security+, CEH, CCNA Security, or equivalent"}}
+];
+
+var T = {
+ ar:{badge:"فرص عمل · صيدا، لبنان",title:"شاركنا في بناء شركة منذ اليوم الأول",lead:"شركة جديدة في صيدا تكوّن فريقها المؤسِّس. نبحث عن أربعة متخصصين في إدارة النظم والدعم الفني وتطبيقات الموبايل والأمن السيبراني لتصميم أنظمتنا وحماية بياناتنا ورسم طريقة عملنا منذ اليوم الأول.",cta:"قدّم الآن",
+  intro:"كعضو في الفريق المؤسِّس، ستبني البنية التقنية والتطبيقات وممارسات الأمن من الصفر، بمسؤولية حقيقية وكلمة مسموعة في نمو الشركة. أربع وظائف، وفريق واحد، ومقر العمل في صيدا.",
+  req:"الحد الأدنى من المتطلبات",applyRole:"قدّم على هذه الوظيفة",chips:["مسؤول نظم","فنّي دعم","تطبيقات موبايل","أمن سيبراني"],
+  steps:[["عبّئ النموذج","بياناتك والوظيفة التي تناسبك"],["أرفق سيرتك الذاتية","بصيغة PDF أو Word"],["نتواصل معك","نراجع الطلبات ونتصل بالمرشحين"]],
+  rolesH:"فرص العمل المتاحة",rolesS:"اختر الوظيفة المناسبة لخبرتك وقدّم عليها مباشرة.",all:"لجميع الوظائف: إجادة اللغة الإنكليزية (والعربية ميزة)، العمل ضمن فريق، والقدرة على العمل تحت الضغط.",
+  applyH:"أرسل طلبك",applyS:"عبّئ بياناتك وأرفق سيرتك الذاتية. الحقول المعلَّمة بنجمة مطلوبة.",
+  fName:"الاسم الكامل *",fPhone:"رقم الهاتف *",fEmail:"البريد الإلكتروني *",fCity:"مكان السكن",fRole:"الوظيفة المطلوبة *",fExp:"سنوات الخبرة",fCv:"السيرة الذاتية (CV) *",cvHint:"PDF أو Word، حتى 4 ميغابايت",fNote:"ملاحظات أو روابط أعمال (اختياري)",
+  pick:"اختر الوظيفة",send:"أرسل الطلب",contactH:"للتواصل · مكان العمل: صيدا، لبنان",wa:"راسلنا عبر واتساب",foot:"تُستخدم البيانات المرسلة لأغراض التوظيف فقط.",
+  needs:"يرجى تعبئة الحقول المطلوبة وإرفاق السيرة الذاتية.",sent:"تم إرسال طلبك. سنتواصل معك عند الحاجة.",fail:"تعذّر الإرسال. حاول مرة أخرى أو تواصل معنا على واتساب.",
+  wapre:"تم فتح واتساب ببياناتك. أرسل الرسالة ثم أرفق ملف السيرة الذاتية في المحادثة نفسها.",
+  big:"حجم الملف كبير. الحد الأقصى 4 ميغابايت.",sending:"جارٍ الإرسال...",wh:"طلب توظيف",lbl:{name:"الاسم",phone:"الهاتف",email:"البريد",city:"السكن",role:"الوظيفة",exp:"سنوات الخبرة",note:"ملاحظات"}},
+ en:{badge:"Job Opportunities · Sidon, Lebanon",title:"Join Us in Building a Company From Day One",lead:"A new company in Sidon is assembling its founding team. We are hiring four specialists in IT administration, support, mobile apps, and cybersecurity to design our systems, protect our data, and shape how we work from day one.",cta:"Apply now",
+  intro:"As a founding team member, you will build our infrastructure, apps, and security practices from scratch, with real ownership and a direct say in how the company grows. Four roles, one team, based in Sidon.",
+  req:"Minimum requirements",applyRole:"Apply for this role",chips:["IT Administrator","Support Technician","Mobile Developer","Cybersecurity"],
+  steps:[["Fill in the form","Your details and the role you want"],["Attach your CV","PDF or Word"],["We contact you","We review applications and call shortlisted candidates"]],
+  rolesH:"Job Opportunities",rolesS:"Pick the role that fits your experience and apply directly.",all:"For all positions: good English (Arabic is a plus), teamwork, and the ability to work under pressure.",
+  applyH:"Send your application",applyS:"Fill in your details and attach your CV. Fields marked * are required.",
+  fName:"Full name *",fPhone:"Phone number *",fEmail:"Email *",fCity:"City / area",fRole:"Position *",fExp:"Years of experience",fCv:"CV *",cvHint:"PDF or Word, up to 4 MB",fNote:"Notes or portfolio links (optional)",
+  pick:"Select a position",send:"Send application",contactH:"Contact · Work location: Sidon, Lebanon",wa:"Message us on WhatsApp",foot:"Submitted data is used for recruitment purposes only.",
+  needs:"Please fill in the required fields and attach your CV.",sent:"Your application was sent. We will contact you if shortlisted.",fail:"Could not send. Try again or contact us on WhatsApp.",
+  wapre:"WhatsApp opened with your details. Send the message, then attach your CV file in the same chat.",
+  big:"File is too large. Maximum 4 MB.",sending:"Sending...",wh:"Job application",lbl:{name:"Name",phone:"Phone",email:"Email",city:"City",role:"Position",exp:"Experience (yrs)",note:"Notes"}}
+};
+
+var ICONS = {
+ admin:'<rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/>',
+ tech:'<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/>',
+ mobile:'<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>',
+ sec:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>'
+};
+function bi(x){return lang==="ar" ? x.replace(/[A-Za-z][A-Za-z0-9+\/.\-]*(?: [A-Za-z0-9][A-Za-z0-9+\/.\-]*)*/g,function(m){return "<bdi>"+m+"</bdi>"}) : x}
+var lang = "en", $ = function(s){return document.querySelector(s)};
+
+function render(){
+  var t = T[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang==="ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-k]").forEach(function(e){e.textContent = t[e.dataset.k]});
+  $("#chips").innerHTML = t.chips.map(function(c,i){return '<li><a href="#role-'+i+'">'+c+'</a></li>'}).join('');
+  $("#steps").innerHTML = t.steps.map(function(x){return '<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>'}).join('');
+  $("#lang").textContent = lang==="ar" ? "English" : "العربية";
+  $("#list").className = "grid";
+  $("#list").innerHTML = roles.map(function(r,i){
+    var c = r[lang];
+    return '<article class="card" id="role-'+i+'"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true">'+ICONS[r.id]+'</svg></span><h3>'+bi(c.t)+'</h3></div>'+
+      '<span class="tag">'+c.m+'</span><h4>'+t.req+'</h4><ul>'+c.r.map(function(x){return '<li>'+bi(x)+'</li>'}).join('')+'</ul>'+
+      '<p class="plus">'+bi(c.p)+'</p><a class="btn" href="#apply" data-role="'+r.id+'">'+t.applyRole+'</a></article>';
+  }).join('');
+  var sel = $("#role"), cur = sel.value;
+  sel.innerHTML = '<option value="">'+t.pick+'</option>'+roles.map(function(r){return '<option value="'+r.id+'">'+r[lang].t+'</option>'}).join('');
+  sel.value = cur;
+  $("#msg").className = ""; $("#msg").textContent = "";
+}
+
+$("#lang").addEventListener("click", function(){lang = lang==="ar" ? "en" : "ar"; render()});
+
+function toB64(file){return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(String(r.result).split(",")[1])};r.onerror=rej;r.readAsDataURL(file)})}
+
+$("#f").addEventListener("submit", function(e){
+  e.preventDefault();
+  var t = T[lang], m = $("#msg"), f = e.target, btn = f.querySelector(".send");
+  var ok = f.name.value.trim() && f.phone.value.trim() && f.email.value && f.email.checkValidity() && f.role.value && f.cv.files.length;
+  if(!ok){m.className="bad"; m.textContent=t.needs; return;}
+  var file = f.cv.files[0];
+  if(file.size > 4*1024*1024){m.className="bad"; m.textContent=t.big; return;}
+  var roleName = roles.filter(function(r){return r.id===f.role.value})[0].en.t;
+
+  if(SHEET_URL){
+    btn.disabled = true; m.className="ok"; m.textContent=t.sending;
+    toB64(file).then(function(b64){
+      return fetch(SHEET_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({
+        role:roleName,name:f.name.value.trim(),phone:f.phone.value.trim(),email:f.email.value.trim(),city:f.city.value.trim(),
+        experience:f.exp.value,note:f.note.value.trim(),cvName:file.name,cvType:file.type,cvData:b64})});
+    }).then(function(){m.className="ok"; m.textContent=t.sent; f.reset();})
+      .catch(function(){m.className="bad"; m.textContent=t.fail;})
+      .then(function(){btn.disabled=false});
+    return;
+  }
+  var L = t.lbl, lines = [t.wh, "", L.role+": "+roleName, L.name+": "+f.name.value.trim(), L.phone+": "+f.phone.value.trim(), L.email+": "+f.email.value.trim()];
+  if(f.city.value.trim()) lines.push(L.city+": "+f.city.value.trim());
+  if(f.exp.value) lines.push(L.exp+": "+f.exp.value);
+  if(f.note.value.trim()) lines.push(L.note+": "+f.note.value.trim());
+  window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(lines.join("\n")),"_blank","noopener");
+  m.className="ok"; m.textContent=t.wapre;
+});
+
+$("#list").addEventListener("click",function(e){
+  var a=e.target.closest("a[data-role]"); if(a) $("#role").value=a.dataset.role;
+});
+render();
+</script>
+</body>
+</html>
